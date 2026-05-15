@@ -1,7 +1,7 @@
 package edu.iismeuccimassa.monopoli;
 
 import java.awt.*;
-
+//classe astratta dalla quale erediteranno tutte le varie caselle
 public abstract class Casella {
     final String nome;
     final TipoCasella tipo;
