@@ -1,7 +1,7 @@
 package edu.iismeuccimassa.monopoli;
 
 import javax.swing.*;
-
+//Classe derivata da Casella
 public class CasellaTassa extends Casella {
     final int importo;
 
@@ -9,7 +9,7 @@ public class CasellaTassa extends Casella {
         super(nome, TipoCasella.TASSA, null);
         this.importo = importo;
     }
-
+    //Questo eseguiAzione fa pagare una tassa al giocatore che è finito sulla casella
     @Override
     void eseguiAzione(Giocatore g) {
         int paga = Math.min(importo, g.soldi);
